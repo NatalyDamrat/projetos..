@@ -3,25 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site</title>
+    <title>Portfólio Pessoal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-        <h1>Bem-vindo ao Meu Site Simples</h1>
+    <header class="header">
+        <div class="container">
+            <h1>Meu Portfólio</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#experience">Experiência</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Desenvolvedor com paixão por criar soluções inovadoras e impactantes. Especializado em desenvolvimento full-stack com foco em performance, segurança e experiência do usuário.</p>
+        </div>
+    </section>
 
-    <main>
-        <h2>Sobre</h2>
-        <p>Aluna Nataly Aparecida Damrat, Número 25, 2 ano B</p>
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Desenvolvimento Front-end</li>
+                <li>Desenvolvimento Back-end</li>
+                <li>Design Responsivo</li>
+                <li>Otimização de Performance</li>
+                <li>Integração de APIs</li>
+            </ul>
+        </div>
+    </section>
 
-        <h2>Porque o site:</h2>
-        <p>Trabalho dado pelo professor. Vou mandar o link do site aqui: <a href="https://www.google.com" target="_blank">o Google</a>.</p>
-    </main>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição do projeto 1.</p>
+                </div>
+                <div class="project">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição do projeto 2.</p>
+                </div>
+                <div class="project">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição do projeto 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; Site Simples</p>
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Experiência</h2>
+            <ul>
+                <li>Desenvolvedor Front-end - Empresa A</li>
+                <li>Desenvolvedor Back-end - Empresa B</li>
+                <li>Engenheiro de Software - Empresa C</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <form>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Meu Portfólio. Todos os direitos reservados.</p>
+        </div>
     </footer>
-
 </body>
-</html>
+    </html>
